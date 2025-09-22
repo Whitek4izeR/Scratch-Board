@@ -1,0 +1,33 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f1e2c; /* Dark background to highlight the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.gradient-text {
+    font-size: 5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff6f3c, #4a90e2, #3c9d6f, #6f42c1); /* Multi-colored gradient */
+    background-size: 400% 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+/* Keyframes for the gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
